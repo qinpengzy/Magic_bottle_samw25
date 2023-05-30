@@ -1,0 +1,197 @@
+T1428 37337:972.410   SEGGER J-Link V7.52a Log File
+T1428 37337:972.477   DLL Compiled: Jul 28 2021 11:08:12
+T1428 37337:972.497   Logging started @ 2023-05-04 23:23
+T1428 37337:972.515 - 11997.181ms
+T1428 37337:975.852 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T1428 37337:976.064   Device "ATSAMD21G18" selected.
+T1428 37337:976.310 - 0.429ms returns 0x00
+T1428 37337:996.150 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T1428 37337:997.702 - 1.584ms returns 0x00
+T1428 37337:997.751 JLINK_SetSpeed(4000)
+T1428 37337:998.067 - 0.331ms
+T1428 37337:998.095 JLINK_ResetPullsRESET(OFF)
+T1428 37337:998.115 - 0.029ms
+T1428 37337:998.135 JLINK_Connect()
+T1428 37337:998.552   InitTarget() start
+T1428 37337:998.587    J-Link Script File: Executing InitTarget()
+T1428 37337:998.760   InitTarget()
+T1428 37338:002.770   InitTarget() end
+T1428 37338:003.857   Found SW-DP with ID 0x0BC11477
+T1428 37338:007.009   DPIDR: 0x0BC11477
+T1428 37338:007.043   Scanning AP map to find all available APs
+T1428 37338:008.096   AP[1]: Stopped AP scan as end of AP map has been reached
+T1428 37338:008.115   AP[0]: AHB-AP (IDR: 0x04770031)
+T1428 37338:008.131   Iterating through AP map to find AHB-AP to use
+T1428 37338:009.429   AP[0]: Core found
+T1428 37338:009.447   AP[0]: AHB-AP ROM base: 0x41003000
+T1428 37338:010.095   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T1428 37338:010.114   Found Cortex-M0 r0p1, Little endian.
+T1428 37338:111.668   -- Max. mem block: 0x000013E0
+T1428 37338:112.020   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T1428 37338:112.529   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T1428 37338:113.076   CPU_ReadMem(4 bytes @ 0xE0002000)
+T1428 37338:113.621   FPUnit: 4 code (BP) slots and 0 literal slots
+T1428 37338:113.637   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T1428 37338:114.157   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T1428 37338:114.678   CPU_ReadMem(4 bytes @ 0xE0001000)
+T1428 37338:115.180   CPU_WriteMem(4 bytes @ 0xE0001000)
+T1428 37338:115.714   CoreSight components:
+T1428 37338:115.731   ROMTbl[0] @ 41003000
+T1428 37338:115.742   CPU_ReadMem(64 bytes @ 0x41003000)
+T1428 37338:116.659   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T1428 37338:117.344   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T1428 37338:117.360   ROMTbl[1] @ E00FF000
+T1428 37338:117.371   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T1428 37338:118.268   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T1428 37338:118.963   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T1428 37338:118.974   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T1428 37338:119.657   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T1428 37338:119.668   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T1428 37338:120.473   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T1428 37338:120.484   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T1428 37338:121.168   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T1428 37338:121.183 - 123.052ms returns 0x00
+T1428 37338:121.232 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T1428 37338:121.250 - 0.005ms returns 0x00
+T1428 37338:121.277 JLINK_Halt()
+T1428 37338:124.375 - 3.105ms returns 0x00
+T1428 37338:125.138 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T1428 37338:125.150 - 0.015ms returns 0
+T1428 37338:125.159 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T1428 37338:125.173   CPU_ReadMem(4 bytes @ 0x41002018)
+T1428 37338:125.685   Data:  05 03 01 10
+T1428 37338:125.694 - 0.538ms returns 1 (0x1)
+TA9DC 37338:134.959 JLINK_IsHalted()
+TA9DC 37338:135.496 - 0.548ms returns TRUE
+TA9DC 37338:135.515 JLINK_GetMOEs(...)
+TA9DC 37338:135.528   CPU_ReadMem(4 bytes @ 0xE000ED30)
+TA9DC 37338:136.077 - 0.566ms returns 0x01
+TA9DC 37338:136.089 JLINK_ReadReg(R15 (PC))
+TA9DC 37338:136.100 - 0.014ms returns 0x00015394
+T1428 37338:145.892 JLINK_BeginDownload(Flags = 0x00000000)
+T1428 37338:145.907 - 0.018ms
+T1428 37338:145.921 JLINK_WriteMem(0x00000000, 0xCD64 Bytes, ...)
+T1428 37338:145.928   Data:  98 2C 00 20 01 6F 00 00 F9 6F 00 00 F9 6F 00 00 ...
+T1428 37338:146.109   completely In flash
+T1428 37338:146.166    -- Read from flash cache (52580 bytes @ 0x00000000)
+T1428 37338:146.246 - 0.327ms returns 0xCD64
+T1428 37338:146.377 JLINK_WriteMem(0x0000CD64, 0x94 Bytes, ...)
+T1428 37338:146.387   Data:  40 1F 00 00 08 00 00 00 07 01 00 00 30 3A 73 64 ...
+T1428 37338:146.397   completely In flash
+T1428 37338:146.407    -- Read from flash cache (148 bytes @ 0x0000CD64)
+T1428 37338:146.415 - 0.041ms returns 0x94
+TA9DC 37338:336.834 JLINK_IsHalted()
+TA9DC 37338:336.861 - 0.031ms returns TRUE
+T1428 37338:337.389 JLINK_EndDownload()
+T1428 37338:337.832   CPU_ReadMem(4 bytes @ 0x41006004)
+T1428 37338:338.330   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T1428 37338:338.841    -- --------------------------------------
+T1428 37338:338.853   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T1428 37338:338.865    -- Start of determining dirty areas in flash cache
+T1428 37338:338.915    -- End of determining dirty areas
+T1428 37338:338.924    -- Start of preparing flash programming
+T1428 37338:338.932    -- Calculating RAM usage
+T1428 37338:338.946    -- RAM usage = 3876 Bytes
+T1428 37338:338.954    -- Preserving CPU registers
+T1428 37338:338.972    -- Preparing memory
+T1428 37338:338.981    -- Preparing target
+T1428 37338:338.989    -- Preserving target RAM temporarily used for programming
+T1428 37338:363.697    -- Downloading RAMCode
+T1428 37338:381.514    -- Preparing RAMCode
+T1428 37338:387.643    -- Checking target RAM
+T1428 37338:389.355    -- End of preparing flash programming
+T1428 37338:389.484   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+T1428 37338:389.571   Looking for J-Link GUI Server exe at: \JLinkGUIServer.exe
+T1428 37338:691.700   Failed to connect to J-Link GUI Server.
+T1428 37338:697.912    -- CPU speed could not be measured.
+T1428 37338:697.937    -- Start of comparing flash
+T1428 37338:697.945    -- CRC check was estimated as fastest method
+T1428 37338:697.957    -- Comparing range 0x0000 - 0x7FFF (128 Sectors, 32 KiB), using multi-block CRC calculation
+T1428 37338:712.039    -- CRC does not match for sectors 0-127
+T1428 37338:712.064    -- Comparing range 0x8000 - 0xCDFF (78 Sectors, 19 KiB), using multi-block CRC calculation
+T1428 37338:721.683    -- CRC does not match for sectors 0-77
+T1428 37338:721.704    -- End of comparing flash
+T1428 37338:721.717    -- Start of erasing sectors
+T1428 37338:721.732    -- Erasing range 0x00000000 - 0x00007FFF (128 Sectors, 32 KB)
+T1428 37338:843.084    -- Erasing range 0x00008000 - 0x0000CDFF ( 78 Sectors, 19 KB)
+T1428 37338:920.793    -- End of erasing sectors
+T1428 37338:920.824    -- Start of flash programming
+T1428 37338:920.836    -- Programming range 0x00000000 - 0x00007FFF (128 Sectors, 32 KB)
+T1428 37339:117.803    -- Programming range 0x00008000 - 0x0000CDFF ( 78 Sectors, 19 KB)
+T1428 37339:245.122    -- End of flash programming
+T1428 37339:245.151    -- 0x0000 - 0xCDFF (206 Sectors, 51 KoB)
+T1428 37339:245.162    -- Start of restoring
+T1428 37339:245.173    -- Restoring RAMCode
+T1428 37339:255.021    -- Restoring target memory
+T1428 37339:274.182    -- Restore target
+T1428 37339:274.202    -- Restore memory
+T1428 37339:274.212    -- Restoring CPU registers
+T1428 37339:274.232    -- End of restoring
+T1428 37339:274.279    -- Bank 0 @ 0x00000000: 1 range affected (52736 bytes)
+T1428 37339:274.299    -- Total: 0.935s (Prepare: 0.359s, Compare: 0.023s, Erase: 0.199s, Program & Verify: 0.330s, Restore: 0.022s)
+T1428 37339:274.316    -- Program & Verify speed: 155 KiB/s
+T1428 37339:276.310 - 938.931ms returns 52736 (0xCE00)
+T1428 37339:276.901 JLINK_ResetPullsRESET(ON)
+T1428 37339:276.912 - 0.014ms
+T1428 37339:276.920 JLINK_ResetNoHalt()
+T1428 37339:277.297   InitTarget() start
+T1428 37339:277.308    J-Link Script File: Executing InitTarget()
+T1428 37339:277.320   InitTarget()
+T1428 37339:281.251   InitTarget() end
+T1428 37339:282.240   Found SW-DP with ID 0x0BC11477
+T1428 37339:285.437   DPIDR: 0x0BC11477
+T1428 37339:285.459   AP map detection skipped. Manually configured AP map found.
+T1428 37339:285.545   AP[0]: AHB-AP (IDR: Not set)
+T1428 37339:286.770   AP[0]: Core found
+T1428 37339:286.788   AP[0]: AHB-AP ROM base: 0x41003000
+T1428 37339:287.375   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T1428 37339:287.389   Found Cortex-M0 r0p1, Little endian.
+T1428 37339:388.132   -- Max. mem block: 0x000010C8
+T1428 37339:388.166   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T1428 37339:388.703   CPU_ReadMem(4 bytes @ 0xE0002000)
+T1428 37339:389.352   FPUnit: 4 code (BP) slots and 0 literal slots
+T1428 37339:389.366   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T1428 37339:389.877   CPU_ReadMem(4 bytes @ 0xE0001000)
+T1428 37339:390.384   CoreSight components:
+T1428 37339:390.399   ROMTbl[0] @ 41003000
+T1428 37339:390.408   CPU_ReadMem(64 bytes @ 0x41003000)
+T1428 37339:391.289   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T1428 37339:391.977   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T1428 37339:391.993   ROMTbl[1] @ E00FF000
+T1428 37339:392.003   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T1428 37339:392.901   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T1428 37339:393.602   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T1428 37339:393.612   CPU_WriteMem(4 bytes @ 0xE0001000)
+T1428 37339:394.152   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T1428 37339:394.835   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T1428 37339:394.846   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T1428 37339:395.539   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T1428 37339:395.550   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T1428 37339:396.294   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T1428 37339:396.312   JLINK_Reset()
+T1428 37339:396.322     CPU_ReadMem(4 bytes @ 0x20000000)
+T1428 37339:396.840     CPU_WriteMem(4 bytes @ 0x20000000)
+T1428 37339:397.378     ResetTarget() start
+T1428 37339:397.387      J-Link Script File: Executing ResetTarget()
+T1428 37339:397.881     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T1428 37339:398.412     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T1428 37339:398.984     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T1428 37339:401.328     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T1428 37339:401.854     CPU_ReadMem(4 bytes @ 0x41002100)
+T1428 37339:402.371     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T1428 37339:402.932     ResetTarget() end
+T1428 37339:406.657     CPU_WriteMem(4 bytes @ 0xE0002000)
+T1428 37339:407.321     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T1428 37339:407.829     CPU_ReadMem(4 bytes @ 0xE0001000)
+T1428 37339:408.346     CPU_WriteMem(4 bytes @ 0xE0001000)
+T1428 37339:408.875   - 12.566ms
+T1428 37339:408.884   JLINK_Go()
+T1428 37339:408.895     CPU_ReadMem(4 bytes @ 0xE0001000)
+T1428 37339:409.447     CPU_WriteMem(4 bytes @ 0xE0001000)
+T1428 37339:410.067     CPU_WriteMem(4 bytes @ 0xE0001004)
+T1428 37339:411.259   - 2.380ms
+T1428 37339:411.267 - 134.350ms
+T1428 37339:419.773 JLINK_Close()
+T1428 37339:446.122 - 26.368ms
+T1428 37339:446.144   
+T1428 37339:446.150   Closed
